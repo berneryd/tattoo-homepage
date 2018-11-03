@@ -1,0 +1,7 @@
+.navbar {
+    -webkit-box-shadow: 0 4px 3px -3px #3C444B;
+    -moz-box-shadow: 0 4px 3px -3px #3C444B;
+    box-shadow: 0 4px 3px -3px #3C444B;
+
+    /* the rest of your styling */
+}

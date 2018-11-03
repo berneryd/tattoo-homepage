@@ -1,0 +1,51 @@
+.parent {
+    height: 200px;
+    overflow: hidden;
+}
+
+
+img:hover{
+    filter: hue-rotate(180deg);
+    -webkit-filter: hue-rotate(180deg);
+    transform: scale(1.1);
+}
+
+.row {
+    overflow: hidden;
+}
+
+.img-fluid{
+    width: 100%;
+}
+
+
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.image1 {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.image2 {
+    position: absolute;
+    bottom: 30px;
+    right: 70px;
+}
+
+@media only screen and (max-width: 600px){
+    .parent {
+        height: 130px;
+        overflow: hidden;
+    }
+
+    .image2 {
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+    }
+}
