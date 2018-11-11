@@ -7,6 +7,7 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { InfoComponent } from './components/info/info.component';
 import { LinksComponent } from './components/links/links.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LinksComponent } from './components/links/links.component';
     LinksComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

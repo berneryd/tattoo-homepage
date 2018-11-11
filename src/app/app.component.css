@@ -1,0 +1,9 @@
+html {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+  }

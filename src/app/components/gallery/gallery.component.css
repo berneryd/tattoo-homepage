@@ -8,11 +8,9 @@ html:not(.touch) .gallery-image figcaption, .touch .gallery-image figcaption, .m
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    font-size: 14px;
     color: rgba(255, 255, 255, 0);
     padding: 1em;
     transition: all 0.2s ease;
-    font-weight: 600;
     max-width: calc(100% - 9em);
     line-height: 1.25;
     text-align: center;
@@ -39,7 +37,6 @@ html:not(.touch) .gallery-image figcaption, .touch .gallery-image figcaption, .m
   }
   html:not(.touch) .gallery-image figcaption.visible, html:not(.touch) .gallery-image:hover figcaption, .touch .gallery-image figcaption, .mfp-with-zoom .visible.mfp-title, .mfp-with-zoom.mfp-ready .mfp-title {
     color: white;
-    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
     transition: all 0.2s ease 0.3s;
   }
   html:not(.touch) .gallery-image figcaption.visible:before, html:not(.touch) .gallery-image:hover figcaption:before, .touch .gallery-image figcaption:before, .mfp-with-zoom .visible.mfp-title:before, .mfp-with-zoom.mfp-ready .mfp-title:before, html:not(.touch) .gallery-image figcaption.visible:after, html:not(.touch) .gallery-image:hover figcaption:after, .touch .gallery-image figcaption:after, .mfp-with-zoom .visible.mfp-title:after, .mfp-with-zoom.mfp-ready .mfp-title:after {
@@ -53,16 +50,7 @@ html:not(.touch) .gallery-image figcaption, .touch .gallery-image figcaption, .m
     left: -1.5em;
     top: -1.5em;
   }
-  
-  html {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizelegibility;
-  }
-  
-  body {
-    font-family: "Montserrat", sans-serif;
-  }
+
   
   .gallery {
     -webkit-column-gap: 0;
@@ -108,6 +96,11 @@ html:not(.touch) .gallery-image figcaption, .touch .gallery-image figcaption, .m
   html:not(.touch) .gallery-image {
     overflow: hidden;
   }
+
+  .gallery-image:hover {
+    zoom: 1.4;
+  }
+
   html:not(.touch) .gallery-image:hover:before {
     border-width: 16px;
   }
@@ -224,8 +217,6 @@ html:not(.touch) .gallery-image figcaption, .touch .gallery-image figcaption, .m
     margin-top: 0 !important;
     width: 20%;
     height: 30%;
-    font: 0/0 serif;
-    text-shadow: none;
     color: transparent;
   }
   button.mfp-close:before, button.mfp-close:after {
@@ -264,47 +255,3 @@ html:not(.touch) .gallery-image figcaption, .touch .gallery-image figcaption, .m
     -webkit-transform: scale(0.95);
             transform: scale(0.95);
   }
-  
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  [id=footer] {
-    margin-top: 10vh;
-    padding: 10vh 0;
-    text-align: center;
-  }
-  [id=footer] .container {
-    position: relative;
-  }
-  [id=footer] .container:before, [id=footer] .container:after {
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    left: 20px;
-    z-index: 10;
-    border-top: 2px solid;
-    width: 10%;
-    margin-bottom: 10vh;
-  }
-  [id=footer] .container:after {
-    left: auto;
-    right: 20px;
-  }
-  [id=footer] * {
-    display: block;
-  }
-  [id=footer] * + * {
-    margin-top: 5vh;
-  }
-  [id=footer] .logo {
-    font-weight: 600;
-    font-size: 1.5em;
-  }
-  [id=footer] .copy {
-    text-transform: uppercase;
-    font-size: 0.75em;
-    font-weight: 600;
-  }
-  
