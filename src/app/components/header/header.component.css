@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Kanit|Montserrat');
 
+.navbar-brand{
+    color: rgba(255, 255, 255) !important;
+} 
+a{
+    color: rgba(255, 255, 255, 0.5) !important;
+}
  .navbar{
     font-family: 'Kanit', sans-serif;
-    align-items: unset;
+    align-items: unset !important;
+    height: 55px;
 }
 .nav-item{
     font-family: 'Kanit', sans-serif;
