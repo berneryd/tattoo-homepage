@@ -1,4 +1,4 @@
-import { Component, OnInit  } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'gallery-component',
@@ -7,19 +7,18 @@ import { Component, OnInit  } from '@angular/core';
 })
 export class GalleryComponent implements OnInit {
 
-  public onClick(element) {
-      console.log(element.path[0].childNodes[0].currentSrc);
-      console.log(document.getElementById("img01"));
-      var image = <HTMLImageElement>document.getElementById("img01");
-      image.src = element.path[0].childNodes[0].currentSrc.replace("images", "images/large");
-      document.getElementById("img01").style.maxHeight = "100%";
-      document.getElementById("img01").style.maxWidth = "100%";
+  public onClick(element: MouseEvent) {
+    var image = <HTMLImageElement>document.getElementById("img01");
+    var clickedImage = <HTMLImageElement>element.toElement.lastChild;
+    image.src = clickedImage.currentSrc.replace("images", "images/large");
 
-      document.getElementById("modal01").style.display = "block";
-      document.getElementById("modal01").style.height = "100%";
+    document.getElementById("img01").style.maxHeight = "100%";
+    document.getElementById("img01").style.maxWidth = "100%";
+
+    document.getElementById("modal01").style.display = "block";
+    document.getElementById("modal01").style.height = "100%";
   }
 
-  public ngOnInit()
-  {
+  public ngOnInit() {
   }
 }
