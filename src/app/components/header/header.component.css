@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit|Montserrat');
+
+ .navbar{
+    font-family: 'Kanit', sans-serif;
+    align-items: unset;
+}
+.nav-item{
+    font-family: 'Kanit', sans-serif;
+} 
+.navbar-collapse {
+    background: #343a40;
+    padding-left: 10px;
+ }
